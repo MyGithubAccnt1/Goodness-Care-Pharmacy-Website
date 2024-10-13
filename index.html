@@ -10,13 +10,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ICO">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
     <style>
-       body {
-        background-image: url('images/background.jpg');
+      body {
+        background-image: url('https://wallpapercrafter.com/desktop1/548191-fantasy-art-The-Garden-of-Words-leaves-lake-water.jpg');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
       }
+
       .slowFade {
           display: flex;
           align-items: flex-start;
@@ -25,6 +29,7 @@
           overflow: hidden;
           position: relative;
       }
+
       .slowFade .slide img {
           position: absolute;
           min-width: 100%;
@@ -38,18 +43,22 @@
           -webkit-animation: slowFade 32s infinite;
                   animation: slowFade 32s infinite;
       }
+
       .slowFade .slide:nth-child(3) img {
           -webkit-animation-delay: 8s;
                   animation-delay: 8s;
       }
+
       .slowFade .slide:nth-child(2) img {
           -webkit-animation-delay: 16s;
                   animation-delay: 16s;
       }
+
       .slowFade .slide:nth-child(1) img {
           -webkit-animation-delay: 24s;
                   animation-delay: 24s;
       }
+
       @keyframes slowFade {
           25% {
               opacity: 1;
@@ -59,6 +68,7 @@
               opacity: 0;
           }
       }
+
       @-webkit-keyframes slowFade {
           25% {
               opacity: 1;
@@ -71,9 +81,20 @@
     </style>
     </head>
     <body>
-        <br>
-        <div class="container bg-white p-3">
-            <div class="container p-1" style="background-color: whitesmoke;">
+        <div class="container p-3 my-5" style="
+          background-color: rgba(255, 255, 255, 0.4);
+          box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+          border: 1px solid rgba(255, 255, 255, 0.5);
+          border-right: 1px solid rgba(255, 255, 255, 0.2);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+          border-radius: 7px;">
+            <div class="container p-1" style="
+              background-color: rgba(255, 255, 255, 0.5);
+              box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+              border: 1px solid rgba(255, 255, 255, 0.5);
+              border-right: 1px solid rgba(255, 255, 255, 0.2);
+              border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+              border-radius: 7px;">
                 <nav class="navbar navbar-expand-sm navbar-light m-0 p-0">
                     <button class="navbar-toggler p-1 ml-4" style="top: 50%; transform: translateX(-50%);" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                         <span class="navbar-toggler-icon"></span>
@@ -91,62 +112,18 @@
                 </nav>
             </div>
             <br>
-            <div class="container p-3 border" style="background-color: whitesmoke;">
-                <div class="row">
-                    <div class="col-sm-3">
-                        <h3 class="text-success text-center" style="font-weight: 800;">Breaking News</h3>
-                        <div class="card">
-                          <img class="card-img-top" src="images/ads1.jpg" width="auto" height="auto">
-                          <div class="card-body">
-                            <a href="https://www.dailymail.co.uk/health/article-10825497/FDA-approves-COVID-19-booster-shots-children-five-11-years-old.html">
-                              <h5 class="card-title mb-3">FDA approves COVID-19 booster shots for children five to 11 years old</h5>
-                            </a>
-                          </div>
-                        </div><br>
-                        <div class="card">
-                          <img class="card-img-top" src="images/ads2.jpg" width="auto" height="auto">
-                          <div class="card-body">
-                            <a href="https://www.msn.com/en-gb/health/medical/covid-19-can-cause-infected-cells-to-e2-80-98explode-e2-80-99-research-shows/ar-AAXnoI1?ocid=uxbndlbing">
-                              <h5 class="card-title mb-3">Covid-19 can cause infected cells to ‘explode’, research shows</h5>
-                            </a>
-                          </div>
-                        </div><br>
-                        <div class="card">
-                          <img class="card-img-top" src="images/ads3.jpg" width="auto" height="auto">
-                          <div class="card-body">
-                            <a href="https://www.marketwatch.com/story/pfizers-covid-19-booster-shot-cleared-for-children-ages-5-to-11-11652804035?dist=bigcharts">
-                              <h5 class="card-title mb-3">Pfizer’s Covid-19 booster shot cleared for children ages 5 to 11</h5>
-                            </a>
-                          </div>
-                        </div><br>
-                        <div class="card">
-                          <img class="card-img-top" src="images/ads4.jpg" width="auto" height="auto">
-                          <div class="card-body">
-                            <a href="https://www.yahoo.com/lifestyle/fda-just-issued-alert-popular-193034051.html?guccounter=1&guce_referrer=aHR0cDovL2xvY2FsaG9zdC8&guce_referrer_sig=AQAAAGm7qO14wFyAByAsDBPV_cV1oRgbFvTsbijXfypT7M2UOQMj1HNx_ZeaspVNuMbcwAaoPlPOSi0XhNRUYPf1FRLVjalgMP9BGm74J_5vogCwk1mDq2d9vMTxGGYkCZN0d_LjS91ZfNALSPW2dnTpLe8JuoPaU42QFH_I7tyWFvxd">
-                              <h5 class="card-title mb-3">The FDA Just Issued a New Alert About This Popular Medication</h5>
-                            </a>
-                          </div>
-                        </div><br>
-                        <div class="card">
-                          <img class="card-img-top" src="images/ads5.jpg" width="auto" height="auto">
-                          <div class="card-body">
-                            <a href="https://www.politico.com/news/2022/05/14/new-york-experiment-drug-use-national-model-00031876">
-                              <h5 class="card-title mb-3">New York experiment with government-approved drug use could become a national model</h5>
-                            </a>
-                          </div>
-                        </div>
-                        <!-- <div class="card">
-                          <img class="card-img-top" src="images/ads6.jpg" width="auto" height="auto">
-                          <div class="card-body">
-                            <a href="https://www.glasgowlive.co.uk/news/new-cancer-weight-loss-drugs-23911555">
-                              <h5 class="card-title mb-3">New cancer and weight loss drugs among six medicines approved for use in Scotland</h5>
-                            </a>
-                          </div>
-                        </div> -->
-                    </div>
-                    <div class="col-sm">
-                        <br>
-                        <div class="slides slowFade">
+            <div class="container p-3 border" style="
+            background-color: rgba(255, 255, 255, 0.5);
+            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 7px;">
+                <div class="row p-0">
+                    
+                    <div class="col-sm-12 col-md-9 pb-5">
+
+                        <div class="slides slowFade my-4">
                             <div class="slide">
                                 <img src="images/img1.jpg" alt="img1"/>
                             </div>
@@ -161,43 +138,69 @@
                             </div>
                         </div>
 
-                        <br><br><h5 class="text-success">The pharmacy that lets you choose</h5>
+                        <h5 class="text-success">The pharmacy that lets you choose</h5>
                         <br><p class="text-dark">Not all generics are the same. Different generics work better for different people, depending on their body's reaction. Not all medicine is different. Branded and generic medications are the same its only difference is their manufacturers. For the first time, Goodness Care Pharmacy gives you back the power so you can choose the exact generic that works best for your body and wallet.</p>
                         <br><h5 class="text-success">Get the Care You Deserve at a Price You’ll Love</h5>
-                        <div class="slide float-left p-2">
-                          <br><img src="images/content 1.png" class="img-fluid">
-                        </div>
-                        <br><br><h5 class="card-title mb-3">Affordable</h5>
+                        <br><br><h5 class="card-title mb-3"><i class="fas fa-shopping-basket"></i><b style="margin-left: 15px;">Affordable</b></h5>
                         <p>We save you thousands each year on prescription medications.</p><br>
-                        <div class="slide float-left p-2">
-                          <br><img src="images/content 2.png" class="img-fluid">
-                        </div>
-                        <br><br><h5 class="card-title mb-3">Accessible</h5>
+                        <br><br><h5 class="card-title mb-3"><i class="fas fa-globe-asia"></i><b style="margin-left: 15px;">Accessible</b></h5>
                         <p>Place an order online at any time or any place.</p><br>
-                        <div class="slide float-left p-2">
-                          <br><img src="images/content 3.png" class="img-fluid">
-                        </div>
-                        <br><br><h5 class="card-title mb-3">Convenient</h5>
+                        <br><br><h5 class="card-title mb-3"><i class="fas fa-handshake"></i><b style="margin-left: 15px;">Convenient</b></h5>
                         <p>Pick up your orders later.</p>
                         <br><br><br><h1 class="text-center" style="font-weight: 1000;">Our service is free, you only pay for your medications</h1>
                         <br><br><br><h5 class="text-success">Accredited & Certified in The Philippines.</h5>
                         <p class="text-justify">By the authority of the director general of the Center of Drug Regulation and Research, Goodness Care Pharmacy has been granted by the Bureau of Food and Drug Administration (FDA) of the Republic of the Philippines a license to operate as Drugstore. Based in Bagtas, Tanza, Cavite, Philippines. Goodness Care Pharmacy is the leading Drugstore and a pioneer in affordable healthcare, providing incredible patient services since 2020.</p>
                     </div>
-                </div>
-                <!-- <div class="row">
-                    <div class="col-sm-3">
-                        
+
+                    <div class="col-sm-12 col-md-3 m-0 py-3">
+                      <h3 class="text-success text-center mb-4" style="font-weight: 800;">Breaking News</h3>
+                      <div class="card">
+                        <img class="card-img-top" target="_blank" src="https://i.dailymail.co.uk/1s/2022/05/16/21/57890061-10822615-image-a-19_1652731765372.jpg" width="auto" height="auto">
+                        <div class="card-body">
+                          <a href="https://www.dailymail.co.uk/health/article-10825497/FDA-approves-COVID-19-booster-shots-children-five-11-years-old.html">
+                            <h5 class="card-title mb-3">FDA approves COVID-19 booster shots for children five to 11 years old</h5>
+                          </a>
+                        </div>
+                      </div><br>
+                      <div class="card">
+                        <img class="card-img-top" target="_blank" src="https://images.gmanews.tv/webpics/2020/01/000_1NZ3CY_2020_01_22_21_23_02.jpg" width="auto" height="auto">
+                        <div class="card-body">
+                          <a href="https://www.gmanetwork.com/news/scitech/science/921067/new-study-reinforces-theory-covid-19-emerged-at-wuhan-china-market/story/">
+                            <h5 class="card-title mb-3">New study reinforces theory COVID-19 emerged at Wuhan, China market</h5>
+                          </a>
+                        </div>
+                      </div><br>
+                      <div class="card">
+                        <img class="card-img-top" target="_blank" src="https://tse4.mm.bing.net/th?id=OIP.lsIGmcmZDvrn8IMte8KJYwHaD4&pid=1.7&w=320&h=198&c=8&dpr=1" width="auto" height="auto">
+                        <div class="card-body">
+                          <a href="https://edition.cnn.com/2022/05/17/health/fda-covid-booster-kids-5-11/index.html">
+                            <h5 class="card-title mb-3">FDA authorizes Pfizer Covid-19 booster shots for children ages 5 to 11</h5>
+                          </a>
+                        </div>
+                      </div><br>
+                      <div class="card">
+                        <img class="card-img-top" target="_blank" src="https://www.theflowspace.com/wp-content/uploads/2024/09/FDA-Veozah-Warning-Liver-Failure.jpg?w=3000&h=2000&crop=1&resize=1536%2C1024" width="auto" height="auto">
+                        <div class="card-body">
+                          <a href="https://www.theflowspace.com/reproductive-health/menopause/fda-warning-veozah-fezolinetant-2953248/">
+                            <h5 class="card-title mb-3">The FDA Just Issued a Scary Alert About Veozah—But Docs Say Don’t Panic</h5>
+                          </a>
+                        </div>
+                      </div><br>
+                      <div class="card">
+                        <img class="card-img-top" target="_blank" src="https://www.politico.com/dims4/default/582e262/2147483647/strip/true/crop/4032x3024+0+0/resize/630x473!/quality/90/?url=https%3A%2F%2Fstatic.politico.com%2F4d%2F0a%2Fec81fdb14f10bb33ea3e7c8f0fd9%2Fimage-from-ios-1.jpg" width="auto" height="auto">
+                        <div class="card-body">
+                          <a href="https://www.politico.com/news/2022/05/14/new-york-experiment-drug-use-national-model-00031876">
+                            <h5 class="card-title mb-3">New York experiment with government-approved drug use could become a national model</h5>
+                          </a>
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-sm">
-                      
-                    </div>
-                </div> -->
                 </div>
-                <br>
+            </div>
+            <br>
             <div class="container-fluid text-dark text-center">
-            Copyright © 2022 GCP. All Rights Reserved.
+              <small><b>Copyright © 2022 GCP. All Rights Reserved.</b></small>
             </div>
         </div>
-        <br>
     </body>
 </html>
