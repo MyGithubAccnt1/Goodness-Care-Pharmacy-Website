@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ICO">
+    
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ICO">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
@@ -78,6 +78,38 @@
               opacity: 0;
           }
       }
+
+      .responsive-container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+        @media screen and (max-width: 786px) {
+          flex-direction: column;
+        }
+      }
+
+      .left-container {
+        width: 75%;
+        margin: 0;
+        padding: 0 10px;
+
+        @media screen and (max-width: 786px) {
+          width: 100%;
+        }
+      }
+
+      .right-container {
+        width: 25%;
+        margin: 0;
+        padding: 10px;
+        
+        @media screen and (max-width: 786px) {
+          width: 100%;
+        }
+      }
     </style>
     </head>
     <body>
@@ -101,12 +133,12 @@
                     </button>
                     <div class="collapse navbar-collapse" id="collapsibleNavbar" style="justify-content: center;">
                         <ul class="navbar-nav">
-                            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">FAQs</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                            <li class="nav-item"><a class="nav-link" href="sign.html">Sign In</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="index.html"><small><b>Home</b></small></a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html"><small><b>About Us</b></small></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><small><b>Products</b></small></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><small><b>FAQs</b></small></a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html"><small><b>Contact Us</b></small></a></li>
+                            <li class="nav-item"><a class="nav-link" href="sign.html"><small><b>Sign In</b></small></a></li>
                         </ul>
                     </div>
                 </nav>
@@ -119,11 +151,10 @@
             border-right: 1px solid rgba(255, 255, 255, 0.2);
             border-bottom: 1px solid rgba(255, 255, 255, 0.2);
             border-radius: 7px;">
-                <div class="row p-0">
-                    
-                    <div class="col-sm-12 col-md-9 pb-5">
+                <div class="responsive-container">
+                    <div class="left-container">
 
-                        <div class="slides slowFade my-4">
+                        <div class="slides slowFade mb-4">
                             <div class="slide">
                                 <img src="images/img1.jpg" alt="img1"/>
                             </div>
@@ -138,27 +169,32 @@
                             </div>
                         </div>
 
-                        <h5 class="text-success">The pharmacy that lets you choose</h5>
-                        <br><p class="text-dark">Not all generics are the same. Different generics work better for different people, depending on their body's reaction. Not all medicine is different. Branded and generic medications are the same its only difference is their manufacturers. For the first time, Goodness Care Pharmacy gives you back the power so you can choose the exact generic that works best for your body and wallet.</p>
-                        <br><h5 class="text-success">Get the Care You Deserve at a Price You’ll Love</h5>
-                        <br><br><h5 class="card-title mb-3"><i class="fas fa-shopping-basket"></i><b style="margin-left: 15px;">Affordable</b></h5>
-                        <p>We save you thousands each year on prescription medications.</p><br>
-                        <br><br><h5 class="card-title mb-3"><i class="fas fa-globe-asia"></i><b style="margin-left: 15px;">Accessible</b></h5>
-                        <p>Place an order online at any time or any place.</p><br>
-                        <br><br><h5 class="card-title mb-3"><i class="fas fa-handshake"></i><b style="margin-left: 15px;">Convenient</b></h5>
-                        <p>Pick up your orders later.</p>
-                        <br><br><br><h1 class="text-center" style="font-weight: 1000;">Our service is free, you only pay for your medications</h1>
-                        <br><br><br><h5 class="text-success">Accredited & Certified in The Philippines.</h5>
-                        <p class="text-justify">By the authority of the director general of the Center of Drug Regulation and Research, Goodness Care Pharmacy has been granted by the Bureau of Food and Drug Administration (FDA) of the Republic of the Philippines a license to operate as Drugstore. Based in Bagtas, Tanza, Cavite, Philippines. Goodness Care Pharmacy is the leading Drugstore and a pioneer in affordable healthcare, providing incredible patient services since 2020.</p>
+                        <h5 class="text-success mb-3"><b>The pharmacy that lets you choose</b></h5>
+                        <small><b class="text-justify">Not all generics are the same. Different generics work better for different people, depending on their body's reaction. Not all medicine is different. Branded and generic medications are the same its only difference is their manufacturers. For the first time, Goodness Care Pharmacy gives you back the power so you can choose the exact generic that works best for your body and wallet.</b></small>
+
+                        <h5 class="text-success my-3"><b>Get the Care You Deserve at a Price You’ll Love</b></h5>
+                        <h5 class="mt-5" style="margin-left: 15px;"><i class="fas fa-shopping-basket"></i><b style="margin-left: 15px;">Affordable</b></h5>
+                        <small style="margin-left: 15px;"><b class="text-justify">We save you thousands each year on prescription medications.</b></small>
+
+                        <h5 class="mt-5" style="margin-left: 15px;"><i class="fas fa-globe-asia"></i><b style="margin-left: 15px;">Accessible</b></h5>
+                        <small style="margin-left: 15px;"><b class="text-justify">Place an order online at any time or any place.</b></small>
+
+                        <h5 class="mt-5" style="margin-left: 15px;"><i class="fas fa-handshake"></i><b style="margin-left: 15px;">Convenient</b></h5>
+                        <small style="margin-left: 15px;"><b class="text-justify">Pick up your orders later.</b></small>
+
+                        <br><br><br><h1 class="text-center" style="font-weight: 800;">Our service is free, you only pay for your medications</h1>
+                        
+                        <h5 class="text-success mt-5 mb-3"><b>Accredited & Certified in The Philippines.</b></h5>
+                        <small><b class="text-justify">By the authority of the director general of the Center of Drug Regulation and Research, Goodness Care Pharmacy has been granted by the Bureau of Food and Drug Administration (FDA) of the Republic of the Philippines a license to operate as Drugstore. Based in Bagtas, Tanza, Cavite, Philippines. Goodness Care Pharmacy is the leading Drugstore and a pioneer in affordable healthcare, providing incredible patient services since 2020.</b></small>
                     </div>
 
-                    <div class="col-sm-12 col-md-3 m-0 py-3">
+                    <div class="right-container">
                       <h3 class="text-success text-center mb-4" style="font-weight: 800;">Breaking News</h3>
                       <div class="card">
                         <img class="card-img-top" target="_blank" src="https://i.dailymail.co.uk/1s/2022/05/16/21/57890061-10822615-image-a-19_1652731765372.jpg" width="auto" height="auto">
                         <div class="card-body">
                           <a href="https://www.dailymail.co.uk/health/article-10825497/FDA-approves-COVID-19-booster-shots-children-five-11-years-old.html">
-                            <h5 class="card-title mb-3">FDA approves COVID-19 booster shots for children five to 11 years old</h5>
+                            <h5 class="card-title mb-3"><small>FDA approves COVID-19 booster shots for children five to 11 years old</small></h5>
                           </a>
                         </div>
                       </div><br>
@@ -166,7 +202,7 @@
                         <img class="card-img-top" target="_blank" src="https://images.gmanews.tv/webpics/2020/01/000_1NZ3CY_2020_01_22_21_23_02.jpg" width="auto" height="auto">
                         <div class="card-body">
                           <a href="https://www.gmanetwork.com/news/scitech/science/921067/new-study-reinforces-theory-covid-19-emerged-at-wuhan-china-market/story/">
-                            <h5 class="card-title mb-3">New study reinforces theory COVID-19 emerged at Wuhan, China market</h5>
+                            <h5 class="card-title mb-3"><small>New study reinforces theory COVID-19 emerged at Wuhan, China market</small></h5>
                           </a>
                         </div>
                       </div><br>
@@ -174,7 +210,7 @@
                         <img class="card-img-top" target="_blank" src="https://tse4.mm.bing.net/th?id=OIP.lsIGmcmZDvrn8IMte8KJYwHaD4&pid=1.7&w=320&h=198&c=8&dpr=1" width="auto" height="auto">
                         <div class="card-body">
                           <a href="https://edition.cnn.com/2022/05/17/health/fda-covid-booster-kids-5-11/index.html">
-                            <h5 class="card-title mb-3">FDA authorizes Pfizer Covid-19 booster shots for children ages 5 to 11</h5>
+                            <h5 class="card-title mb-3"><small>FDA authorizes Pfizer Covid-19 booster shots for children ages 5 to 11</small></h5>
                           </a>
                         </div>
                       </div><br>
@@ -182,7 +218,7 @@
                         <img class="card-img-top" target="_blank" src="https://www.theflowspace.com/wp-content/uploads/2024/09/FDA-Veozah-Warning-Liver-Failure.jpg?w=3000&h=2000&crop=1&resize=1536%2C1024" width="auto" height="auto">
                         <div class="card-body">
                           <a href="https://www.theflowspace.com/reproductive-health/menopause/fda-warning-veozah-fezolinetant-2953248/">
-                            <h5 class="card-title mb-3">The FDA Just Issued a Scary Alert About Veozah—But Docs Say Don’t Panic</h5>
+                            <h5 class="card-title mb-3"><small>The FDA Just Issued a Scary Alert About Veozah—But Docs Say Don’t Panic</small></h5>
                           </a>
                         </div>
                       </div><br>
@@ -190,7 +226,7 @@
                         <img class="card-img-top" target="_blank" src="https://www.politico.com/dims4/default/582e262/2147483647/strip/true/crop/4032x3024+0+0/resize/630x473!/quality/90/?url=https%3A%2F%2Fstatic.politico.com%2F4d%2F0a%2Fec81fdb14f10bb33ea3e7c8f0fd9%2Fimage-from-ios-1.jpg" width="auto" height="auto">
                         <div class="card-body">
                           <a href="https://www.politico.com/news/2022/05/14/new-york-experiment-drug-use-national-model-00031876">
-                            <h5 class="card-title mb-3">New York experiment with government-approved drug use could become a national model</h5>
+                            <h5 class="card-title mb-3"><small>New York experiment with government-approved drug use could become a national model</small></h5>
                           </a>
                         </div>
                       </div>
