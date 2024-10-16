@@ -6,9 +6,13 @@
 ?>
 
   <head>
-    <title>Goodness Care Pharmacy</title>
-
     <style>
+      .nav-home {
+        a {
+          color: #000 !important;
+        }
+      }
+
       .slowFade {
           display: flex;
           align-items: flex-start;
@@ -108,29 +112,9 @@
         border-right: 1px solid rgba(255, 255, 255, 0.2);
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
         border-radius: 7px;">
-          <div class="container p-1" style="
-            background-color: rgba(255, 255, 255, 0.5);
-            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.5);
-            border-right: 1px solid rgba(255, 255, 255, 0.2);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 7px;">
-              <nav class="navbar navbar-expand-sm navbar-light m-0 p-0">
-                  <button class="navbar-toggler p-1 ml-4" style="top: 50%; transform: translateX(-50%);" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                      <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="collapsibleNavbar" style="justify-content: center;">
-                      <ul class="navbar-nav">
-                          <li class="nav-item active"><a class="nav-link" href="index.html"><small><b>Home</b></small></a></li>
-                          <li class="nav-item"><a class="nav-link" href="about.html"><small><b>About Us</b></small></a></li>
-                          <li class="nav-item"><a class="nav-link" href="#"><small><b>Products</b></small></a></li>
-                          <li class="nav-item"><a class="nav-link" href="#"><small><b>FAQs</b></small></a></li>
-                          <li class="nav-item"><a class="nav-link" href="contact.html"><small><b>Contact Us</b></small></a></li>
-                          <li class="nav-item"><a class="nav-link" href="sign.html"><small><b>Sign In</b></small></a></li>
-                      </ul>
-                  </div>
-              </nav>
-          </div>
+          <?php
+            include('./includes/navigation.html');
+          ?>
           <br>
           <div class="container p-3 border" style="
           background-color: rgba(255, 255, 255, 0.5);
@@ -209,22 +193,14 @@
                           <h5 class="card-title mb-3"><small>The FDA Just Issued a Scary Alert About Veozah—But Docs Say Don’t Panic</small></h5>
                         </a>
                       </div>
-                    </div><br>
-                    <!-- <div class="card">
-                      <img class="card-img-top" target="_blank" src="https://www.politico.com/dims4/default/582e262/2147483647/strip/true/crop/4032x3024+0+0/resize/630x473!/quality/90/?url=https%3A%2F%2Fstatic.politico.com%2F4d%2F0a%2Fec81fdb14f10bb33ea3e7c8f0fd9%2Fimage-from-ios-1.jpg" width="auto" height="auto">
-                      <div class="card-body">
-                        <a href="https://www.politico.com/news/2022/05/14/new-york-experiment-drug-use-national-model-00031876">
-                          <h5 class="card-title mb-3"><small>New York experiment with government-approved drug use could become a national model</small></h5>
-                        </a>
-                      </div>
-                    </div> -->
+                    </div>
                   </div>
               </div>
           </div>
           <br>
-          <div class="container-fluid text-dark text-center">
-            <small><b>Copyright © 2022 GCP. All Rights Reserved.</b></small>
-          </div>
+          <?php
+            include('./includes/footer.html');
+          ?>
       </div>
   </body>
 </html>
